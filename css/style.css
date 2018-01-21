@@ -1,0 +1,51 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+footer{
+	text-align:center;
+}
+
+.container {
+  margin-top: 56px;
+}
+.texto-carousel{
+	margin-bottom: 300px;
+
+}
+.texto-carousel-md{
+	margin-bottom: 200px;
+}
+.texto-titulo-sm{
+	text-align:center;
+}
+.btn-titulo{
+    background: linear-gradient(-160deg,rgba(62,254,72,0.8),rgba(0,143,236,0.8));
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 335px;
+    height: 40px;
+    border: 1px;
+    border-radius: 10px;
+}
+.bg-imagem{
+	background-size:550px;
+	background-image: url(../img/img-sm.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+.meio{
+	text-align:center;
+}
+.midias-texto{
+	margin-top:10px;
+}
+img.midias{
+	margin-left:10px;
+}
+
+.cadastrobotao{
+	margin-top:10px;
+}
+.pag-log-cad{
+	margin-top: 100px;
+}

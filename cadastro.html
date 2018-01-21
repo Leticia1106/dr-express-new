@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<!-- Meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      <!-- Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <!-- Custom CSS -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- font -->
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
+      <title>Dr. Express - Cadastro</title>
+
+</head>
+		<body>
+        <!-- NAV -->
+  <nav class="navbar fixed-top navbar-light bg-light navbar-expand-md">
+        <button class="navbar-toggler reduzida" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        <a class="navbar-brand" href="index.html" >
+          <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          Dr. Express
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">SERVIÇOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">CONTATO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">LOGIN</a>
+              </li>
+            </ul>
+        </div>  
+  </nav>
+
+	<form class="pag-log-cad">
+        <div class="container col-md-6">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputNome">Nome</label>
+      <input type="email" class="form-control" id="inputNome" placeholder="Nome">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputSobrenome">Sobrenome</label>
+      <input type="password" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail">E-mail</label>
+    <input type="text" class="form-control" id="inputEmail" placeholder="E-mail">
+  </div>
+  <div class="form-group">
+    <label for="inputTelefone">Telefone</label>
+    <input type="text" class="form-control" id="inputTelefone" placeholder="Telefone">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEndereco">Endereço</label>
+      <input type="text" class="form-control" id="inputEndereco">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputEstado">Estado</label>
+      <select id="inputEstado" class="form-control" placeholder="Selecione">
+        <option selected>Escolha seu estado..</option>
+        <option>Acre - AC</option>
+				<option>Alagoas - AL</option>
+		    <option>Amapá - AP</option>
+				<option>Amazonas - AM</option>
+		    <option>Bahia  - BA</option>
+		    <option>Ceará - CE</option>
+				<option>Distrito Federal  - DF</option>
+				<option>Espírito Santo - ES</option>
+		    <option>Goiás - GO</option>
+				<option>Maranhão - MA</option>
+				<option>Mato Grosso - MT</option>
+				<option>Mato Grosso do Sul - MS</option>
+				<option>Minas Gerais - MG</option>
+        <option>Pará - PA</option>
+				<option>Paraíba - PB</option>
+		    <option>Paraná - PR</option>
+				<option>Pernambuco - PE</option>
+		    <option>Piauí - PI</option>
+				<option>Rio de Janeiro - RJ</option>
+				<option>Rio Grande do Norte - RN</option>
+				<option>Rio Grande do Sul - RS</option>
+				<option>Rondônia - RO</option>
+				<option>Roraima - RR</option>
+				<option>Santa Catarina - SC</option>
+				<option>São Paulo - SP</option>
+				<option>Sergipe - SE</option>
+				<option>Tocantins - TO</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputCidade">Cidade</label>
+      <input type="text" class="form-control" id="inputCidade">
+    </div>
+  </div>
+</div>
+ 
+  </div>
+  <button type="submit" class="btn btn-info container col-md-6 offset-md-3">Cadastre-se</button>
+</form>
+		</body>
+</html>
