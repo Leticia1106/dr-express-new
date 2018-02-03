@@ -33,7 +33,7 @@
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 				    <ul class="navbar-nav ">
 				      <li class="nav-item active">
-				        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+				        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
 				      </li>
 				      <li class="nav-item">
 				        <a class="nav-link" onClick="document.getElementById('servicos-sm').scrollIntoView( {block: 'end', behavior: 'smooth'});">SERVIÇOS</a>
@@ -54,9 +54,8 @@
 		<div class="carousel-caption texto-carousel d-none d-lg-block d-xl-block">
     		<img src="img/logo.png" width="20%">
     		<h1>DR. EXPRESS</h1>
-    		<button type="button" name="button" class="btn-titulo text-white">AGENDAMENTO</button>
-
-  		</div>
+    		<button type="button" name="button" class="btn-titulo text-white" onclick="location.href = 'login.html'">AGENDAMENTO</button>
+			</div>
 		  <ol class="carousel-indicators">
 		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -84,17 +83,51 @@
 		</div>
 	</header>
 
+	<!-- SECTION 1 ONLY MD LG AND XL -->
+	<section class="container d-none d-md-block d-lg-block d-xl-block" id="servicos-sm">
+		<div class="row">
+				<div class="col-lg-4 text-center mb-4">
+						<img class="rounded-circle img-fluid d-block mx-auto" src="img/card1.png" width="50%">
+						<h3>Atendimento 24h</h3>
+						<p>Você pode a qualquer momento realizar um agendamento pelo site!</p>
+					</div>
+					<div class="col-lg-4 text-center mb-4">
+						<img class="rounded-circle img-fluid d-block mx-auto" src="img/card2.png" width="50%">
+						<h3>Emergências</h3>
+						<p>Contamos com um sistema eficiente de emergência, basta apertar um botão e uma de nossas ambulâncias irá se deslocar até sua casa!</p>
+					</div>
+					<div class="col-lg-4 text-center mb-4">
+						<img class="rounded-circle img-fluid d-block mx-auto" src="img/card3.png" width="50%">
+						<h3>Qualquer lugar</h3>
+						<p>Você pode acessar nosso sistema de qualquer lugar do mundo para verificar ou realizar seu agendamento!</p>
+					</div>
+		</div>
+	</section>
+
+	<!-- SECTION 2 App ONLY MD LG AND XL -->
+	<section class="container-fluid bg-light d-none d-md-block d-lg-block d-xl-block">
+		<div class="row">
+			<div class="mx-auto">
+				<h3>Aplicativo de Emergência</h3>
+			</div>
+			<div class="col-lg-3">
+				
+			</div>
+		</div>
+
+	</section>
+
 	<!-- SITE SEM CAROUSEL ONLY SM  -->
-	<header class="container d-block d-sm-block d-md-none bg-light bg-imagem">
+	<header class="bordasm container d-block d-sm-block d-md-none bg-light bg-imagem">
 		<div class="row justify-content-center">
 			<img src="img/sm-logo.png">
 		</div>
 		<h1 class="texto-titulo-sm">DR.EXPRESS</h1>
-		<button type="button" name="button" class="btn-titulo text-white">AGENDAMENTO</button>
+		<button type="button" name="button" class="btn-titulo text-white col-sm-6 offset-sm-3">AGENDAMENTO</button>
 	</header>
 	<!-- SECTION 1 ONLY SM -->
-	<section class="container d-block d-sm-block d-md-none bg-secondary text-white" id="servicos-sm">
-		<div class="row">
+	<section class="bordasm container d-block d-sm-block d-md-none bg-secondary text-white" id="servicos-sm">
+		<div class=" row">
 			<div class="meio">
 				<img src="img/card1.png" width="20%">
 				<h5 class="font-weight-bold">Atendimento 24h</h5>
@@ -151,13 +184,13 @@
 			    		<label for="exampleFormControlTextarea1">Nos dê mais detalhes:</label>
 			    		<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 			  		</div>
-				<button type="button" class="btn btn-primary btn-lg btn-block bg-info">Enviar</button>
+				<button type="button" class="btn btn-lg btn-block bg-info text-white">Enviar</button>
 			</form>
 		</div>
 	</section>
 
 	<!-- FOOTER ONLY SM-->
-	<footer class="container d-block d-sm-block d-md-none bg-dark">
+	<footer class="bordasm container d-block d-sm-block d-md-none bg-dark">
 		<img src="img/sm-logo.png" width="10%">
 			<h6 class="text-light midias-texto font-weight-bold">Mídias Sociais</h6>
 		<div class="midias">

@@ -8,6 +8,10 @@ footer{
 .container {
   margin-top: 56px;
 }
+.row{
+	margin: auto;
+	padding: auto;
+}
 .texto-carousel{
 	margin-bottom: 300px;
 
@@ -43,9 +47,19 @@ img.midias{
 	margin-left:10px;
 }
 
-.cadastrobotao{
-	margin-top:10px;
+.botaocad{
+	margin-top:15px;
 }
 .pag-log-cad{
 	margin-top: 100px;
+}
+.bordasm{
+	border: 1px;
+	border-radius: 10px;
+}
+.margemsm{
+	margin-top: 10px;
+}
+.loginbotao{
+	margin-bottom: 10px;
 }
