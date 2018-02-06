@@ -13,6 +13,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
       <!-- Custom CSS -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <!-- font -->
@@ -21,7 +22,7 @@
       <title>Dr. Express - Cadastro</title>
 
 </head>
-		<body>
+		<body ng-app="cadastro" ng-controller="CadastroController">
         <!-- NAV -->
   <nav class="navbar fixed-top navbar-light bg-light navbar-expand-md">
         <button class="navbar-toggler reduzida" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,5 +118,17 @@
   </div>
   <button type="submit" class="btn btn-info container botaocad col-sm-6 offset-sm-3">Cadastre-se</button>
 </form>
+
+
+  <script>
+    const app = angular.module('cadastro', []);
+      app.controller('CadastroController', ($scope) => {
+
+      });
+  
+  
+  
+  
+  </script>
 		</body>
 </html>
