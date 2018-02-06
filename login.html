@@ -73,17 +73,30 @@
           <script>
           const app = angular.module('login', []);
             app.controller('LoginController', ($scope, $window) => {
-                $scope.dados = {
-                    email: 'admin@drexpress.com',
+                let dados = [
+                  {
+                      email: 'admin@drexpress.com',
+                      senha: '123'
+                  },
+                  {
+                    email: 'vinicius@drexpress.com',
                     senha: '123'
-                };
+                  },
+                  {
+                    email: 'mauricio@drexpress.com',
+                    senha: '123'
+                  }
+                ];
+
                 $scope.autorizado = false;
                 $scope.erro = false;
                 $scope.navPerfil = false;
                 $scope.navLogin = true;
 
                 $scope.fazerLogin = (email, senha) => {
-                    if( (email == $scope.dados.email) && (senha == $scope.dados.senha) ){
+                    
+                  for (let usuario of dados){
+                    if( (email == usuario.email) && (senha == usuario.senha) ){
                         $scope.autorizado = true;
                         $window.location.href = 'perfil.html';
                         
@@ -91,6 +104,7 @@
                     else{
                         $scope.erro = true;
                     }
+                  }
                 }
             });
           
