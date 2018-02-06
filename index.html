@@ -36,10 +36,10 @@
 				        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" onClick="document.getElementById('servicos-sm').scrollIntoView( {block: 'end', behavior: 'smooth'});">SERVIÇOS</a>
+				        <a class="nav-link" onClick="document.getElementById('servicos').scrollIntoView( {block: 'end', behavior: 'smooth'});">SERVIÇOS</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" onClick="document.getElementById('contato-sm').scrollIntoView( {block: 'end', behavior: 'smooth'});">CONTATO</a>
+				        <a class="nav-link" onClick="document.getElementById('contato').scrollIntoView( {block: 'end', behavior: 'smooth'});">CONTATO</a>
 				      </li>
 				      <li class="nav-item">
 				        <a class="nav-link" href="login.html">LOGIN</a>
@@ -84,7 +84,7 @@
 	</header>
 
 	<!-- SECTION 1 ONLY MD LG AND XL -->
-	<section class="container d-none d-md-block d-lg-block d-xl-block" id="servicos-sm">
+	<section class="container d-none d-md-block d-lg-block d-xl-block" id="servicos">
 		<div class="row">
 				<div class="col-lg-4 text-center mb-4">
 						<img class="rounded-circle img-fluid d-block mx-auto" src="img/card1.png" width="50%">
@@ -107,7 +107,7 @@
 	<!-- SECTION 2 App ONLY MD LG AND XL -->
 	<section class="container-fluid bg-light d-none d-md-block d-lg-block d-xl-block">
 		<div class="row">
-			<div class="mx-auto">
+			<div class="col-lg-6 offset-lg-4">
 				<h3>Aplicativo de Emergência</h3>
 			</div>
 			<div class="col-lg-3">
@@ -115,6 +115,44 @@
 			</div>
 		</div>
 
+	</section>
+
+	<!-- SECTION 3 Contato ONLY MD LG AND XL -->
+	<section class="container d-none d-md-block d-lg-block d-xl-block" id="contato">
+		<div class="row">
+			<h3>Contato</h3>
+			<form class="col-md-12">
+			  <div class="form-group">
+			    <label for="exampleFormControlInput1">Email:</label>
+			    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="meuemail@email.com">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleFormControlSelect1">Assunto:</label>
+			    <select class="form-control" id="exampleFormControlSelect1">
+			      <option>Problemas com o agendamento</option>
+			      <option>Problemas com o atendimento domiciliar</option>
+			      <option>Problemas com o atendimento online</option>
+			      <option>Problemas com o cadastro</option>
+			      <option>Outros problemas</option>
+			    </select>
+			  </div>
+			  <div class="form-group">
+			       <label for="exampleFormControlSelect2">Qual é o problema?</label>
+			       <select multiple class="form-control" id="exampleFormControlSelect2">
+			       <option>Não encontro uma data para o meu agendamento</option>
+			       <option>Não consigo concluir o meu cadastro</option>
+			       <option>Não estou sendo atendido no atendimento online</option>
+			       <option>Outros problemas</option>
+			       <option>Sugestões</option>
+			    </select>
+			  </div>
+			  		<div class="form-group">
+			    		<label for="exampleFormControlTextarea1">Nos dê mais detalhes:</label>
+			    		<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+			  		</div>
+				<button type="button" class="btn btn-lg btn-block bg-info text-white">Enviar</button>
+			</form>
+		</div>
 	</section>
 
 	<!-- SITE SEM CAROUSEL ONLY SM  -->
@@ -126,7 +164,7 @@
 		<button type="button" name="button" class="btn-titulo text-white col-sm-6 offset-sm-3">AGENDAMENTO</button>
 	</header>
 	<!-- SECTION 1 ONLY SM -->
-	<section class="bordasm container d-block d-sm-block d-md-none bg-secondary text-white" id="servicos-sm">
+	<section class="bordasm container d-block d-sm-block d-md-none bg-secondary text-white" id="servicos">
 		<div class=" row">
 			<div class="meio">
 				<img src="img/card1.png" width="20%">
@@ -152,7 +190,7 @@
 		</div>
 	</section>
 	<!-- CONTATO ONLY SM -->
-	<section class="container d-block d-sm-block d-md-none" id="contato-sm">
+	<section class="container d-block d-sm-block d-md-none" id="contato">
 		<div class="row">
 			<h4 class="font-weight-bold">Contato</h4>
 			<form class="col-md-4">
@@ -189,8 +227,8 @@
 		</div>
 	</section>
 
-	<!-- FOOTER ONLY SM-->
-	<footer class="bordasm container d-block d-sm-block d-md-none bg-dark">
+	<!-- FOOTER -->
+	<footer class="bordasm container-fluid bg-dark">
 		<img src="img/sm-logo.png" width="10%">
 			<h6 class="text-light midias-texto font-weight-bold">Mídias Sociais</h6>
 		<div class="midias">
